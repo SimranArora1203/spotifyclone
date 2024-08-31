@@ -23,7 +23,7 @@ const playmusic = (track, pause = false) => {
 };
 async function getSongs(folder) {
   currFolder = folder;
-  let a = await fetch(`http://127.0.0.1:5500/songs/${folder}`);
+  let a = await fetch(`/songs/${folder}`);
   let response = await a.text();
   console.log("response is :");
   // console.log(response);
